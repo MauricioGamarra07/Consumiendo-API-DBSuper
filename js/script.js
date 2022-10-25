@@ -12,7 +12,7 @@ function ejecutar() {
 }
 
 function mostrarDatos(data){
-    console.log(data);
+    /* console.log(data); */
     /* console.log(data.length); */
     for (let i = 0; i < data.length; i++) {
         const div = document.createElement('div');

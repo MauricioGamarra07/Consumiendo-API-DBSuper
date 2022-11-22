@@ -11,17 +11,23 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="loader.css">
 
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 
 </head>
 
-<body>
-    <header>
-        <!-- place navbar here -->
-    </header>
-    <main>
+<body class="hidden">
 
+    <div class="cont-loader" id="onload">
+        <div class="loader">
+            <div class="loader__ball"></div>
+            <div class="loader__ball"></div>
+            <div class="loader__ball"></div>
+        </div>
+    </div>
+
+    <header>
         <h1 class="text-center p-3 text-warning">Personajes de Dragon Ball Super</h1>
 
         <div class="busqueda">
@@ -29,7 +35,7 @@
                 <input type="text" placeholder="Buscar por Nombre de Personaje" class="txtNombre">
                 <i class="bx bx-search-alt-2 bx-md icono-buscar"></i>
             </div>
-    
+
             <div class="cboUniverso">
                 <select class="nombre-universo">
                     <option>Seleccione un Universo</option>
@@ -48,7 +54,9 @@
                 </select>
             </div>
         </div>
+    </header>
 
+    <main>
         <div class="section-personajes">
 
         </div>
@@ -58,8 +66,12 @@
         <!-- place footer here -->
     </footer>
 
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+
     <script src="js/script.js"></script>
     <script src="js/busqueda.js"></script>
+    <script src="js/codigo.js"></script>
 
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"

@@ -1,5 +1,8 @@
 .busqueda{
-    width: 100%;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
